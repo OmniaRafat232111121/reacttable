@@ -25,7 +25,7 @@ export const FilteringTable = () => {
 const {globalFilter}=state
   return (
     <>
-    <GlobalFilter filter={globalFilter} setFilter={setGlobalFilter}/>
+    <GlobalFilter fil/>
       <table {...getTableProps()}>
         <thead>
           {headerGroups.map(headerGroup => (

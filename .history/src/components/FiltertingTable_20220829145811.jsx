@@ -3,7 +3,6 @@ import { useTable,useGlobalFilter } from 'react-table'
 import MOCK_DATA from './MOCK_DATA.json'
 import { COLUMNS } from './columns'
 import './table.css'
-import GlobalFilter from './GlobalFilter'
 
 export const FilteringTable = () => {
   const columns = useMemo(() => COLUMNS, [])
@@ -25,7 +24,7 @@ export const FilteringTable = () => {
 const {globalFilter}=state
   return (
     <>
-    <GlobalFilter filter={globalFilter} setFilter={setGlobalFilter}/>
+    <Globa
       <table {...getTableProps()}>
         <thead>
           {headerGroups.map(headerGroup => (
