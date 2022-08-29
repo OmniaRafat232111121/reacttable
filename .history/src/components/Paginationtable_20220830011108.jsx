@@ -71,7 +71,6 @@ const {pageIndex,pageSize}=state
       }} 
       style={{width:'50px'}} 
       /> 
-      { '   '}
       </span>
       <select
           value={pageSize}

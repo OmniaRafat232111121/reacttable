@@ -69,9 +69,8 @@ const {pageIndex,pageSize}=state
         const pageNumber=e.target.value ? Number(e.target.value)-1 :0
         gotoPage(pageNumber)
       }} 
-      style={{width:'50px'}} 
+      style={{width:'50px'}} { '   '}
       /> 
-      { '   '}
       </span>
       <select
           value={pageSize}

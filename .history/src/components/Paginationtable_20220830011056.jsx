@@ -71,17 +71,7 @@ const {pageIndex,pageSize}=state
       }} 
       style={{width:'50px'}} 
       /> 
-      { '   '}
       </span>
-      <select
-          value={pageSize}
-          onChange={e => setPageSize(Number(e.target.value))}>
-          {[10, 25, 50].map(pageSize => (
-            <option key={pageSize} value={pageSize}>
-              Show {pageSize}
-            </option>
-          ))}
-        </select>
 
       
       <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>

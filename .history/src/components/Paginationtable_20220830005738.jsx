@@ -20,14 +20,12 @@ export  const Paginationtable  = () => {
     state,
     gotoPage,
     pageCount,
-    setPageSize,
     prepareRow,
   } = useTable({
     columns,
-    data,
-    initialState:{pageIndex:4}
+    data
   },usePagination)
-const {pageIndex,pageSize}=state
+const {pageIndex}=state
   return (
     <>
       <table {...getTableProps()}>
@@ -58,32 +56,14 @@ const {pageIndex,pageSize}=state
       <span>
       Page {' '}
       <strong>
-      {pageIndex+1} of {pageOptions.length} { "    "}
-      
+      {pageIndex+1} of {pageOptions.length}
       </strong>
       </span>
       <span>
-       | go to page  : {'  '}
+      GO TO PAge :{' '}
       <input type="number" defaultValue={pageIndex+1}
-      onChange={e=>{
-        const pageNumber=e.target.value ? Number(e.target.value)-1 :0
-        gotoPage(pageNumber)
-      }} 
-      style={{width:'50px'}} 
-      /> 
-      { '   '}
+      onChange={} />
       </span>
-      <select
-          value={pageSize}
-          onChange={e => setPageSize(Number(e.target.value))}>
-          {[10, 25, 50].map(pageSize => (
-            <option key={pageSize} value={pageSize}>
-              Show {pageSize}
-            </option>
-          ))}
-        </select>
-
-      
       <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
           {'<<'}
         </button>{' '}
@@ -96,7 +76,6 @@ const {pageIndex,pageSize}=state
         <button onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage}>
           {'>>'}
         </button>{' '}
-
       </div>
      </>
   )
