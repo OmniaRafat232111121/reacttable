@@ -1,10 +1,13 @@
-import React from 'react'
+import R from 'react'
 import './App.css'
-import  {SortingTable}  from './components/SortingTable'
+import BasicTable from './components/BasicTable'
+
 function App() {
+ 
+
   return (
     <div className="App">
-   <SortingTable/>
+   <BasicTable/>
      
     </div>
   )
