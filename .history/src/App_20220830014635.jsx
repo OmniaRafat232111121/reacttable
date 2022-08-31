@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 //import { FilteringTable } from './components/FiltertingTable'
-//import { FilteringTable } from './components/FiltertingTable'
+import { FilteringTable } from './components/FiltertingTable'
 import { Paginationtable } from './components/Paginationtable'
 //import { BasicTable } from './components/BasicTable'
 //import { SortingTable } from './components/sortingTable'
@@ -10,7 +10,7 @@ import { Paginationtable } from './components/Paginationtable'
 function App() {
   return (
     <div className="App">
-<Paginationtable/>
+<Pa
     </div>
   )
 }
