@@ -8,14 +8,13 @@ import { Paginationtable } from './components/Paginationtable'
 import { RowSelection } from './components/RowSelection'
 import { StickyTable } from './components/StickyTable'
 import { BasicTable } from './components/BasicTable'
-import { SortingTable } from './components/SortingTable'
 //import { SortingTable } from './components/sortingTable'
 
 
 function App() {
   return (
     <div className="App">
-<SortingTable/>
+<
     </div>
   )
 }
